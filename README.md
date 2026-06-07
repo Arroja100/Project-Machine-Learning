@@ -16,10 +16,10 @@ Salman Alfarisy           (K1D024010)
 Natasya Jamila Mapaza     (K1D024016)
 Galih Tri Prasetyo        (K1D024028)
 Arroja Aliya Fadhilah     (K1D024037)
-
+```
 ### SUMBER DATASET
 ```text
 Dataset yang digunakan dalam penelitian ini diperoleh dari platform Kaggle dengan nama Marketing Sales Dataset, yang menyediakan data terkait aktivitas pemasaran dan kinerja penjualan untuk keperluan analisis data dan pengembangan model prediktif. <br>
 
 https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
-
+```
