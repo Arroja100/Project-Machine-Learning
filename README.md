@@ -1,8 +1,7 @@
 # Project-Machine-Learning
-## DESKRIPSI PROJECT :
+## ANALISIS PENGARUH STRATEGI PEMASARAN TERHADAP PENDAPATAN PENJUALAN PADA MARKETING SALES DATASET 
 
-### ANALISIS PENGARUH STRATEGI PEMASARAN TERHADAP PENDAPATAN PENJUALAN PADA MARKETING SALES DATASET ### 
-
+## DESCRIPSI PROJECT
 <b>Deskripsi Studi Kasus</b> <br>
 <br>
 Sebuah perusahaan ingin menganalisis dan memprediksi pendapatan penjualan (sales_revenue_usd) berdasarkan berbagai faktor yang berkaitan dengan aktivitas pemasaran, karakteristik pelanggan, serta kondisi pasar. Faktor-faktor tersebut meliputi anggaran pemasaran, pengeluaran iklan online dan offline, jumlah promosi, tingkat diskon, lalu lintas website, tingkat konversi pelanggan, hingga kepuasan pelanggan. <br>
