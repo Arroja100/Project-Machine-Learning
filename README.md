@@ -29,7 +29,7 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
 ```
 
 ### RINGKASAN HASIL
-<b>
+
 Project ini membangun model machine learning untuk memprediksi pendapatan penjualan (sales revenue) berdasarkan strategi pemasaran menggunakan Marketing Sales Dataset. Tahapan yang dilakukan meliputi EDA, preprocessing, seleksi fitur, pemodelan regresi, hyperparameter tuning, dan evaluasi model.
 
 Beberapa algoritma dibandingkan, yaitu Linear Regression, Lasso Regression, Random Forest Regressor, dan XGBoost Regressor. Berdasarkan metrik MAPE, XGBoost menjadi model terbaik dengan akurasi yang meningkat setelah hyperparameter tuning, menghasilkan MAPE 13,6%, MAE 45,87, RMSE 2411,5, dan R² 0,816.
@@ -37,4 +37,4 @@ Beberapa algoritma dibandingkan, yaitu Linear Regression, Lasso Regression, Rand
 Analisis feature importance menunjukkan bahwa customer_segment dan marketing_budget_usd merupakan faktor yang paling berpengaruh terhadap pendapatan penjualan, diikuti oleh season, product_category, dan sales_channel. Hasil evaluasi juga menunjukkan bahwa model memiliki kemampuan generalisasi yang baik dan tidak mengalami overfitting yang signifikan, meskipun akurasi masih menurun pada transaksi dengan nilai penjualan yang sangat tinggi akibat keberadaan outlier.
 
 Secara keseluruhan, proyek ini menunjukkan bahwa XGBoost merupakan model yang efektif untuk memprediksi pendapatan penjualan dan dapat dimanfaatkan sebagai pendukung pengambilan keputusan dalam menyusun strategi pemasaran berbasis data.
-<b>
+
