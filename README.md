@@ -28,7 +28,7 @@ dan pengembangan model prediktif.
 https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
 ```
 ## CARA MENJALANKAN SCRIPT
-1. Buka Google Colab
+1. Buka Google Colab <br>
 * Akses colab.researchearch.google.com.
 * Buat Notebook baru dengan klik New Notebook (atau File > New Notebook).
   
@@ -47,55 +47,55 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
   Tunggu hingga muncul pesan "Saving marketing_dataset.xlsx to marketing_dataset.xlsx" (artinya file berhasil diunggah ke lingkungan        runtime Colab).
 
 4. Jalankan Tahapan Pemodelan 
-  * Eksplorasi Data Awal
+  * Eksplorasi Data Awal <br>
     Baca file dengan pd.read_excel(), tampilkan df.info(), df.describe(), dan cek missing value. Tujuannya untuk memahami struktur dan        tipe data.
     
-  * Visualisasi Data
+  * Visualisasi Data <br>
     Buat histogram, boxplot, scatter plot, dan heatmap korelasi. Langkah ini berguna untuk mendeteksi outlier, melihat distribusi, dan        mengidentifikasi fitur yang berkorelasi kuat dengan target (sales_revenue_usd).
     
-  * Pra-pemrosesan (Preprocessing)
+  * Pra-pemrosesan (Preprocessing) <br>
     Lakukan Label Encoding pada kolom kategorikal (region, sales_channel, product_category, customer_segment, season). <br>
     Seleksi fitur: pilih hanya kolom yang paling relevan (misal: marketing_budget_usd, conversion_rate, num_previous_purchases, dll.). <br>
     Normalisasi dengan RobustScaler untuk menangani outlier pada fitur numerik.
     
-  * Pembagian Data
+  * Pembagian Data <br>
     Pisahkan data menjadi Training (80%) dan Testing (20%) menggunakan train_test_split.
     
-  * Latih Model Baseline
+  * Latih Model Baseline <br>
     Jalankan Regresi Linier Berganda dan Lasso sebagai model dasar (baseline) untuk melihat performa awal.
     
-  * Latih Model Ensemble
+  * Latih Model Ensemble <br>
     Latih Random Forest Regressor dan XGBoost Regressor (dengan parameter default) untuk meningkatkan akurasi dibandingkan model linier.
     
-  * Hyperparameter Tuning (Optimasi)
+  * Hyperparameter Tuning (Optimasi) <br>
     Lakukan pencarian parameter terbaik pada XGBoost menggunakan RandomizedSearchCV (proses ini akan memakan waktu sekitar 2–5 menit).
     
-  * Evaluasi dan Perbandingan
+  * Evaluasi dan Perbandingan <br>
     Bandingkan semua model berdasarkan metrik MAPE, MAE, RMSE, dan R2. Model dengan MAPE terkecil adalah yang terbaik.
     
-  * Analisis Lanjutan
+  * Analisis Lanjutan <br>
     Tampilkan Feature Importance untuk mengetahui fitur paling berpengaruh (biasanya marketing_budget_usd). <br>
     Buat Learning Curve untuk memastikan model tidak overfitting/underfitting. <br>
     Lakukan Analisis Residual untuk melihat pola kesalahan prediksi. <br>
     Tips: Tulis kode untuk tiap step di atas dalam sel terpisah. Dengan begitu, jika terjadi error, Anda tahu persis di bagian mana yang      bermasalah.
 
-5. Perhatikan Proses Tuning
+5. Perhatikan Proses Tuning <br>
 Saat menjalankan RandomizedSearchCV, Colab akan menampilkan progres "Fitting 3 folds for each of 50 candidates". Biarkan hingga selesai (jangan hentikan runtime).
 
-6. Cek Output Akhir
+6. Cek Output Akhir <br>
 Setelah semua sel selesai, Colab akan menampilkan secara otomatis:
--- Tabel statistik (deskripsi data, missing value, dll.).
--- Grafik interaktif (histogram, boxplot, heatmap korelasi, scatter plot prediksi vs aktual).
--- Tabel perbandingan model yang diurutkan berdasarkan MAPE (Mean Absolute Percentage Error).
--- Feature Importance (grafik batang yang menunjukkan bahwa marketing_budget_usd adalah faktor terpenting).
+-- Tabel statistik (deskripsi data, missing value, dll.). <br>
+-- Grafik interaktif (histogram, boxplot, heatmap korelasi, scatter plot prediksi vs aktual). <br>
+-- Tabel perbandingan model yang diurutkan berdasarkan MAPE (Mean Absolute Percentage Error). <br>
+-- Feature Importance (grafik batang yang menunjukkan bahwa marketing_budget_usd adalah faktor terpenting). <br>
 -- Learning Curve untuk memastikan model tidak overfitting/underfitting.
 
-8. Simpan Notebook
+8. Simpan Notebook <br>
    Jangan lupa simpan progres ke Google Drive (File > Save a copy in Drive) agar pekerjaan tidak hilang dan bisa diakses kembali.
-7. Model Terbaik
-   Di akhir proses, sistem akan mencetak teks:
-  "Berdasarkan MAPE terkecil, model terbaik adalah: Tuned XGBoost Regressor dengan MAPE: 0.1355".
-  Ini adalah hasil akhir yang menunjukkan bahwa model XGBoost yang sudah di-tuning menghasilkan error prediksi sekitar 13.55%,              menjadikannya yang paling akurat.
+7. Model Terbaik <br>
+   Di akhir proses, sistem akan mencetak teks: <br>
+  "Berdasarkan MAPE terkecil, model terbaik adalah: Tuned XGBoost Regressor dengan MAPE: 0.1355". <br>
+  Ini adalah hasil akhir yang menunjukkan bahwa model XGBoost yang sudah di-tuning menghasilkan error prediksi sekitar 13.55%, <br>             menjadikannya yang paling akurat.
 
 
 
