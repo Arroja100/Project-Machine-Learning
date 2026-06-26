@@ -43,8 +43,8 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
   from google.colab import files
   uploaded = files.upload()
   ```
-  Setelah dijalankan, akan muncul tombol "Choose Files". Klik dan pilih file marketing_dataset.xlsx dari komputer Anda.
-  Tunggu hingga muncul pesan "Saving marketing_dataset.xlsx to marketing_dataset.xlsx" (artinya file berhasil diunggah ke lingkungan        runtime Colab).
+    Setelah dijalankan, akan muncul tombol "Choose Files". Klik dan pilih file marketing_dataset.xlsx dari komputer Anda.
+    Tunggu hingga muncul pesan "Saving marketing_dataset.xlsx to marketing_dataset.xlsx" (artinya file berhasil diunggah ke lingkungan        runtime Colab).
 
 4. Jalankan Tahapan Pemodelan 
   * Eksplorasi Data Awal <br>
@@ -95,7 +95,7 @@ Setelah semua sel selesai, Colab akan menampilkan secara otomatis:
 7. Model Terbaik <br>
    Di akhir proses, sistem akan mencetak teks: <br>
   "Berdasarkan MAPE terkecil, model terbaik adalah: Tuned XGBoost Regressor dengan MAPE: 0.1355". <br>
-  Ini adalah hasil akhir yang menunjukkan bahwa model XGBoost yang sudah di-tuning menghasilkan error prediksi sekitar 13.55%, <br>             menjadikannya yang paling akurat.
+  Ini adalah hasil akhir yang menunjukkan bahwa model XGBoost yang sudah di-tuning menghasilkan error prediksi sekitar 13.55%,           menjadikannya yang paling akurat.
 
 
 
