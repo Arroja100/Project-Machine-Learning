@@ -32,11 +32,11 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
 * Akses colab.researchearch.google.com.
 * Buat Notebook baru dengan klik New Notebook (atau File > New Notebook).
   
-2. Instal Library Pendukung (Opsional tapi Disarankan)
-  Pada sel pertama, jalankan perintah untuk menginstall pustaka openpyxl dan xgboost
+2. Instal Library Pendukung <br>
+  Pada sel pertama, jalankan perintah untuk menginstall pustaka openpyxl dan xgboost <br>
   Catatan: Sebagian besar library seperti NumPy, Pandas, Scikit-Learn, dan Matplotlib sudah terinstal di Colab, jadi tidak perlu diinstal   ulang.
 
-3. Upload Dataset
+3. Upload Dataset <br>
   Salin kode berikut ke sel baru dan jalankan:
   ```text
   python
@@ -54,8 +54,8 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
     Buat histogram, boxplot, scatter plot, dan heatmap korelasi. Langkah ini berguna untuk mendeteksi outlier, melihat distribusi, dan        mengidentifikasi fitur yang berkorelasi kuat dengan target (sales_revenue_usd).
     
   * Pra-pemrosesan (Preprocessing)
-    Lakukan Label Encoding pada kolom kategorikal (region, sales_channel, product_category, customer_segment, season).
-    Seleksi fitur: pilih hanya kolom yang paling relevan (misal: marketing_budget_usd, conversion_rate, num_previous_purchases, dll.).
+    Lakukan Label Encoding pada kolom kategorikal (region, sales_channel, product_category, customer_segment, season). <br>
+    Seleksi fitur: pilih hanya kolom yang paling relevan (misal: marketing_budget_usd, conversion_rate, num_previous_purchases, dll.). <br>
     Normalisasi dengan RobustScaler untuk menangani outlier pada fitur numerik.
     
   * Pembagian Data
@@ -74,10 +74,9 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
     Bandingkan semua model berdasarkan metrik MAPE, MAE, RMSE, dan R2. Model dengan MAPE terkecil adalah yang terbaik.
     
   * Analisis Lanjutan
-    Tampilkan Feature Importance untuk mengetahui fitur paling berpengaruh (biasanya marketing_budget_usd).
-    Buat Learning Curve untuk memastikan model tidak overfitting/underfitting.
-    Lakukan Analisis Residual untuk melihat pola kesalahan prediksi.
-    
+    Tampilkan Feature Importance untuk mengetahui fitur paling berpengaruh (biasanya marketing_budget_usd). <br>
+    Buat Learning Curve untuk memastikan model tidak overfitting/underfitting. <br>
+    Lakukan Analisis Residual untuk melihat pola kesalahan prediksi. <br>
     Tips: Tulis kode untuk tiap step di atas dalam sel terpisah. Dengan begitu, jika terjadi error, Anda tahu persis di bagian mana yang      bermasalah.
 
 5. Perhatikan Proses Tuning
