@@ -43,8 +43,7 @@ https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
   from google.colab import files
   uploaded = files.upload()
   ```
-    Setelah dijalankan, akan muncul tombol "Choose Files". Klik dan pilih file marketing_dataset.xlsx dari komputer Anda.
-    Tunggu hingga muncul pesan "Saving marketing_dataset.xlsx to marketing_dataset.xlsx" (artinya file berhasil diunggah ke lingkungan        runtime Colab).
+  Setelah dijalankan, akan muncul tombol "Choose Files". Klik dan pilih file marketing_dataset.xlsx dari komputer Anda. <br>  Tunggu hingga muncul pesan "Saving marketing_dataset.xlsx to marketing_dataset.xlsx" (artinya file berhasil diunggah ke lingkungan        runtime Colab).
 
 4. Jalankan Tahapan Pemodelan 
   * Eksplorasi Data Awal <br>
