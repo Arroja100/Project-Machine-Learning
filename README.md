@@ -5,9 +5,9 @@
 
 <b>Deskripsi Studi Kasus</b> <br>
 <br>
-Sebuah perusahaan yang bergerak di bidang penjualan produk dan/atau jasa berupaya meningkatkan kinerja bisnisnya melalui pemanfaatan analisis data. Dalam menghadapi persaingan pasar yang semakin ketat, perusahaan menyadari pentingnya pengambilan keputusan yang berbasis data (data-driven decision making), khususnya dalam merancang strategi pemasaran yang efektif dan efisien. Oleh karena itu, perusahaan ingin melakukan analisis mendalam terhadap berbagai faktor yang diduga memiliki pengaruh terhadap pendapatan penjualan (sales revenue). Faktor-faktor yang dianalisis dalam studi ini mencakup berbagai aspek yang berkaitan dengan aktivitas pemasaran dan perilaku pelanggan. Beberapa variabel yang digunakan antara lain anggaran pemasaran secara keseluruhan, pengeluaran untuk iklan baik secara online maupun offline, jumlah dan frekuensi promosi yang dilakukan, serta tingkat diskon yang diberikan kepada pelanggan. Selain itu, perusahaan juga mempertimbangkan faktor digital seperti jumlah lalu lintas (traffic) website, tingkat konversi pelanggan (conversion rate), serta tingkat kepuasan pelanggan yang mencerminkan pengalaman dan loyalitas konsumen terhadap produk atau layanan yang ditawarkan. Dengan banyaknya variabel yang terlibat, perusahaan memerlukan suatu pendekatan analitis yang mampu mengidentifikasi hubungan antar variabel tersebut sekaligus memprediksi nilai pendapatan penjualan di masa mendatang. Oleh karena itu, akan dibangun suatu model prediksi berbasis data historis yang mampu memperkirakan besarnya sales revenue dalam satuan dolar (sales_revenue_usd). Model ini diharapkan tidak hanya memiliki tingkat akurasi yang baik, tetapi juga mampu memberikan interpretasi mengenai variabel-variabel mana yang paling berpengaruh terhadap peningkatan atau penurunan pendapatan. <br>
+Sebuah perusahaan ingin menganalisis dan memprediksi pendapatan penjualan (sales_revenue_usd) berdasarkan berbagai faktor yang berkaitan dengan aktivitas pemasaran, karakteristik pelanggan, serta kondisi pasar. Faktor-faktor tersebut meliputi anggaran pemasaran, pengeluaran iklan online dan offline, jumlah promosi, tingkat diskon, lalu lintas website, tingkat konversi pelanggan, hingga kepuasan pelanggan. <br>
 <br>
-Tujuan utama dari studi kasus ini adalah untuk menghasilkan model prediktif yang dapat digunakan sebagai alat bantu dalam proses pengambilan keputusan strategis perusahaan. Dengan adanya model tersebut, perusahaan dapat merencanakan alokasi anggaran pemasaran secara lebih optimal, menentukan strategi promosi yang paling efektif, serta menyesuaikan pendekatan pemasaran berdasarkan karakteristik pelanggan dan kondisi pasar yang dinamis. Selain itu, hasil analisis juga diharapkan dapat membantu perusahaan dalam mengidentifikasi peluang peningkatan pendapatan serta meminimalkan pemborosan sumber daya. Pada akhirnya, penerapan model ini diharapkan mampu meningkatkan efisiensi kegiatan pemasaran, memaksimalkan pendapatan penjualan, serta memberikan keunggulan kompetitif bagi perusahaan dalam menghadapi persaingan di pasar yang terus berkembang.
+Tujuan : Memprediksi besarnya pendapatan penjualan (sales_revenue_usd) yang akan diperoleh perusahaan berdasarkan berbagai data terkait aktivitas pemasaran, karakteristik pelanggan, dan kondisi pasar. Model yang dibangun nantinya dapat digunakan sebagai alat pendukung pengambilan keputusan dalam merencanakan strategi pemasaran dan mengalokasikan anggaran promosi secara lebih efektif. Dengan adanya prediksi pendapatan penjualan yang lebih akurat, perusahaan diharapkan dapat meningkatkan efisiensi dalam perencanaan bisnis, memaksimalkan potensi pendapatan, serta meningkatkan daya saing di pasar
 
 
 ## ANGGOTA KELOMPOK :
@@ -26,4 +26,15 @@ yang menyediakan data terkait aktivitas pemasaran dan kinerja penjualan untuk ke
 dan pengembangan model prediktif.
 
 https://www.kaggle.com/datasets/abdelfattahibrahim/marketing-sales-dataset
+```
+
+### RINGKASAN HASIL
+```text
+Project ini membangun model **machine learning** untuk memprediksi **pendapatan penjualan (sales revenue)** berdasarkan strategi pemasaran menggunakan *Marketing Sales Dataset*. Tahapan yang dilakukan meliputi **EDA, preprocessing, seleksi fitur, pemodelan regresi, hyperparameter tuning,** dan **evaluasi model**.
+
+Beberapa algoritma dibandingkan, yaitu **Linear Regression, Lasso Regression, Random Forest Regressor,** dan **XGBoost Regressor**. Berdasarkan metrik **MAPE**, **XGBoost** menjadi model terbaik dengan akurasi yang meningkat setelah *hyperparameter tuning*, menghasilkan **MAPE 13,6%**, **MAE 745,87**, **RMSE 2411,5**, dan **R² 0,816**.
+
+Analisis **feature importance** menunjukkan bahwa **customer_segment** dan **marketing_budget_usd** merupakan faktor yang paling berpengaruh terhadap pendapatan penjualan, diikuti oleh **season**, **product_category**, dan **sales_channel**. Hasil evaluasi juga menunjukkan bahwa model memiliki kemampuan generalisasi yang baik dan tidak mengalami **overfitting** yang signifikan, meskipun akurasi masih menurun pada transaksi dengan nilai penjualan yang sangat tinggi akibat keberadaan **outlier**.
+
+Secara keseluruhan, proyek ini menunjukkan bahwa **XGBoost** merupakan model yang efektif untuk memprediksi pendapatan penjualan dan dapat dimanfaatkan sebagai pendukung pengambilan keputusan dalam menyusun strategi pemasaran berbasis data.
 ```
